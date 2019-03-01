@@ -7,7 +7,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
@@ -67,6 +67,9 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
+                    <a href="{{ url('/admin/') }}">Admin</a>
+                    <a href="{{ url('/seller/') }}">Seller</a>
+                    <a href="{{ url('/shipper/') }}">Shipper</a>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -81,11 +84,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel 1
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://blog.laravel.com">Blog</a>
